@@ -13,6 +13,7 @@
   "description": "",
   "dependencies": {
     "@arcgis/core": "^4.31.5",
+    "@esri/arcgis-rest-request": "^4.2.3",
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
