@@ -5,6 +5,7 @@ import Portal from '@arcgis/core/portal/Portal.js';
 import LoginButton from "./components/LoginButton.js";
 import LogoutButton from "./components/LogoutButton.js";
 import AuthUser from "./components/AuthUser.js";
+import UserItems from "./components/UserItems.js";
 import '../src/style.css';
 
 const APP_ID = "uyraRvZ6pdkx1MLM"; // your actual appId
@@ -52,10 +53,11 @@ function App() {
     };
 
     return (
-        <div className="App">
+        <div className="App centered-container">
             {isSignedIn ? (
                 <>
                     <AuthUser  userInfo={userInfo} />
+                    <UserItems userInfo={userInfo} />
                     <LogoutButton onClick={handleSignedOut} />
                 </>
             ) : (

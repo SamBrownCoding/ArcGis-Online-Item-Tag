@@ -11,44 +11,215 @@ arcgis-map {
   height: 100vh;
 }
 
+@media (max-width: 600px) {
+  .sign-in-box{
+    max-width: 90%;
+    padding: 15px;
+  }
+  
+  .user-items {
+    padding: 15px;
+  }
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+/* AuthUser CSS */
+
+.auth-user {
+  background-color: rgba(30, 30, 30, 0.8);
+  border: 1px solid #444;
+  border-radius: 8px; 
+  padding: 20px; 
+  max-width: 300px; 
+  margin: 20px auto; 
+  text-align: center; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+  color: white; 
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.auth-user h2 {
+  margin: 0 0 10px; 
+  font-size: 24px; 
+}
+
+/* Optional paragraph styles */
+.auth-user p {
+  margin: 5px 0; 
+  font-size: 16px; 
+  color: #ccc; 
+}
+
+
 /* Container for the sign-in box */
 .sign-in-box {
-  background-color: rgba(30, 30, 30, 0.8); /* Dark background with transparency */
-  border: 1px solid #444; /* Darker border */
-  border-radius: 8px; /* Rounded corners */
-  padding: 20px; /* Padding inside the box */
-  max-width: 300px; /* Maximum width of the box */
-  margin: 20px auto; /* Center the box horizontally */
-  text-align: center; /* Center text inside the box */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  background-color: rgba(30, 30, 30, 0.8);
+  /* Dark background with transparency */
+  border: 1px solid #444;
+  /* Darker border */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Padding inside the box */
+  max-width: 300px;
+  /* Maximum width of the box */
+  margin: 20px auto;
+  /* Center the box horizontally */
+  text-align: center;
+  /* Center text inside the box */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  /* Subtle shadow for depth */
 }
 
 /* General button styles */
 .sign-in-button {
-  background-color: #007bff; /* Bootstrap primary color */
-  color: white; /* Text color */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 10px 20px; /* Padding */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-  outline: none; /* Remove outline */
+  background-color: #007bff;
+  /* Bootstrap primary color */
+  color: white;
+  /* Text color */
+  border: none;
+  /* No border */
+  border-radius: 4px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Padding */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition */
+  outline: none;
+  /* Remove outline */
 }
 
 /* Hover effect */
 .sign-in-button:hover {
-  background-color: #0056b3; /* Darker shade for hover */
+  background-color: #0056b3;
+  /* Darker shade for hover */
 }
 
 /* Focus effect */
 .sign-in-button:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow */
+  outline: none;
+  /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  /* Add a subtle shadow */
 }
 
 /* Disabled button styles */
 .sign-in-button:disabled {
-  background-color: #c0c0c0; /* Gray background for disabled state */
-  cursor: not-allowed; /* Not-allowed cursor */
+  background-color: #c0c0c0;
+  /* Gray background for disabled state */
+  cursor: not-allowed;
+  /* Not-allowed cursor */
+}
+
+.logout-button {
+  /* Bootstrap danger color */
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  margin-top: 20px;
+}
+
+
+.logout-button:hover {
+  /* Darker shade for hover */
+  background-color: #c82333;
+}
+
+/* User Items Container */
+.user-items {
+  padding: 20px;
+  background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent dark background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  max-width: 600px; /* Max width of the user items box */
+  width: 100%; /* Full width on smaller screens */
+}
+
+/* Heading Styles */
+.user-items h2 {
+  font-size: 24px;
+  color: #eee;
+  margin-bottom: 15px;
+  text-align: center; /* Centered heading */
+}
+
+/* Individual User Item */
+.user-item {
+  background-color: #1e1e1e; /* Dark background for individual items */
+  border: 1px solid #444; /* Dark border */
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s;
+}
+
+/* Hover effect for user items */
+.user-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title for each user item */
+.user-item h3 {
+  color: #eee;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+/* Input field for tags */
+.tag-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 110px); /* Full width minus button width */
+  margin-right: 10px;
+}
+
+/* Add Tag Button */
+.add-tag-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for add tag button */
+.add-tag-button:hover {
+  background-color: #0056b3;
+}
+
+/* Feedback message styles */
+.feedback-message {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center; /* Center feedback messages */
+}
+
+.feedback-message.success {
+  color: #28a745; /* Green for success messages */
+}
+
+.feedback-message.error {
+  color: #dc3545; /* Red for error messages */
 }
