@@ -223,3 +223,8 @@ arcgis-map {
 .feedback-message.error {
   color: #dc3545; /* Red for error messages */
 }
+
+.label-hint {
+  font-size: 12px;
+  color: #5f5d5d;
+}
