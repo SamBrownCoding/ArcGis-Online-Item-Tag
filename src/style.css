@@ -63,65 +63,44 @@ arcgis-map {
 /* Container for the sign-in box */
 .sign-in-box {
   background-color: rgba(30, 30, 30, 0.8);
-  /* Dark background with transparency */
   border: 1px solid #444;
-  /* Darker border */
   border-radius: 8px;
-  /* Rounded corners */
   padding: 20px;
-  /* Padding inside the box */
   max-width: 300px;
-  /* Maximum width of the box */
-  margin: 20px auto;
   /* Center the box horizontally */
+  margin: 20px auto;
   text-align: center;
-  /* Center text inside the box */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  /* Subtle shadow for depth */
 }
 
 /* General button styles */
 .sign-in-button {
   background-color: #007bff;
-  /* Bootstrap primary color */
   color: white;
-  /* Text color */
   border: none;
-  /* No border */
   border-radius: 4px;
-  /* Rounded corners */
   padding: 10px 20px;
-  /* Padding */
   font-size: 16px;
-  /* Font size */
   cursor: pointer;
-  /* Pointer cursor on hover */
   transition: background-color 0.3s ease;
-  /* Smooth background color transition */
   outline: none;
-  /* Remove outline */
 }
 
 /* Hover effect */
 .sign-in-button:hover {
   background-color: #0056b3;
-  /* Darker shade for hover */
 }
 
 /* Focus effect */
 .sign-in-button:focus {
   outline: none;
-  /* Remove default outline */
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  /* Add a subtle shadow */
 }
 
 /* Disabled button styles */
 .sign-in-button:disabled {
   background-color: #c0c0c0;
-  /* Gray background for disabled state */
   cursor: not-allowed;
-  /* Not-allowed cursor */
 }
 
 .logout-button {
