@@ -105,6 +105,7 @@ const UserItems = ({ userInfo }) => {
                 <div>
                     {items.map(item => (
                         <div className='user-item' key={item.id}>
+                            <img slot='thumbnail' src={item.thumbnailUrl} alt={item.title} />
                             <h3>{item.title}</h3>
                             <input
                                 type="text"

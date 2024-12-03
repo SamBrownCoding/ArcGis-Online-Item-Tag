@@ -4,6 +4,7 @@
 html,
 body {
   margin: 0;
+  background-color: #1c1c1c;
 }
 
 arcgis-map {
@@ -27,8 +28,10 @@ arcgis-map {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #1c1c1c;
+  padding: 20px;
+  min-height: 100vh;
 }
 
 /* AuthUser CSS */
@@ -115,6 +118,7 @@ arcgis-map {
   transition: background-color 0.3s ease;
   outline: none;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -125,20 +129,33 @@ arcgis-map {
 
 /* User Items Container */
 .user-items {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
   padding: 20px;
-  background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent dark background */
+  background-color: rgba(30, 30, 30, 0.9);
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  max-width: 600px; /* Max width of the user items box */
-  width: 100%; /* Full width on smaller screens */
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto; /* Center and add margin */
 }
 
 /* Heading Styles */
 .user-items h2 {
   font-size: 24px;
   color: #eee;
-  margin-bottom: 15px;
+  margin: 20px 0;
   text-align: center; /* Centered heading */
+}
+
+/* Images */
+.user-item img{
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Individual User Item */
@@ -161,6 +178,7 @@ arcgis-map {
   color: #eee;
   font-size: 20px;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 /* Input field for tags */
